@@ -1,0 +1,28 @@
+p {
+   color: blue;
+}
+
+.list {
+   font-weight: bold;
+}
+
+#point {
+   font-weight: 100;
+}
+
+#head2 {
+   color: red;
+}
+
+.parag {
+   color: brown;
+}
+
+ul {
+   font-weight: lighter;
+   color: blueviolet;
+}
+
+h2 {
+   color:aquamarine;
+}

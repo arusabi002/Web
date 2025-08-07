@@ -1,0 +1,53 @@
+.p1 {
+    font-size: 1rem;
+}
+
+.p2 {
+    font-size: 2em;
+}
+
+.p3 {
+    color: #d4eb8a;
+}
+
+.p4 {
+    color: rgb(25, 33, 200);
+}
+
+.p4 {
+    color: rgb(25, 33, 200);
+}
+
+.p5 {
+    color: rgba(25, 200, 115, 0.58);
+}
+
+.d1 {
+    width: 200px;
+    height: 200px;
+    background-color: goldenrod;
+}
+
+.d2 {
+    width: 75%;
+    height: 75%;
+    background-color: wheat;
+}
+
+.d3 {
+    width: 200px;
+    height: 200px;
+    background-color: #1c3845;
+}
+
+.d4 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(184, 187, 240);
+}
+
+.d5 {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(7, 50, 29, 0.797);
+}

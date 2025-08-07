@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2.1</title>
+</head>
+<body>
+    <h1>Задание 1</h1>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Форма</legend>
+        <label for="name">Имя:</label>
+       <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+
+       <label for="email">E-mail:</label>
+       <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+
+       <label for="password">Пароль:</label>
+       <input type="password" id="password" name="password" required>
+        <br>
+        <br>
+        
+       <label for="message">Комментарии:</label>
+       <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <br>
+        <br>
+
+    <h1>Задание 2</h1>          
+        <label for="country">Страна:</label>
+       <select id="country" name="country" required>
+           <option value="">Выберете вашу страну</option>
+           <option value="us">Казахстан</option>
+           <option value="ca">Великобритания</option>
+           <option value="uk">Южная Корея</option>
+           <option value="au">Япония</option>
+       </select>
+       <br>
+       <br>
+
+       <button type="submit">Отправить</button>
+        <button type="reset">Сбросить</button>
+
+
+        </fieldset>
+   </form>
+
+       
+</body>
+</html>
