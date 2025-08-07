@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.4</title>
+    <style>
+        .button:hover {
+            background-color: rebeccapurple;
+            color: aqua;
+        }
+        
+        .input:focus {
+            border: 5px solid;
+            border-color: rgb(255, 0, 119);
+        }
+
+        .list:first-child {
+            color: rgb(3, 118, 80);
+            font-weight: bold;
+        }
+
+        .list:last-child {
+            color: rgb(11, 3, 118);
+            font-weight: bold;
+        }
+
+        .link:hover {
+            color: goldenrod;
+        }
+
+        .text:nth-child(odd){
+            background-color: blueviolet;
+            color: antiquewhite;
+        }
+
+        .list2:first-child:hover {
+            color: aquamarine;
+        }
+
+        .butt2:last-child:focus {
+            background-color: aquamarine;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Задание 1</h1>
+    <p>:hover для изменения при наведении. :focus для изменения при клике/выборе</p>
+    <label for="input">Поле ввода:</label>
+    <input class="input" type="text">
+    <button class="button">Отправить</button>
+
+    <h1>Задание 2</h1>
+    <p>:first-child/:last-child для изменения первого/последнего элемента в классе</p>
+    <ul>
+        <li class="list">Предмет 1</li>
+        <li class="list">Предмет 2</li>
+        <li class="list">Предмет 3</li>
+    </ul>
+
+    <h1>Задание 3</h1>
+    <p>:nth-child(even/odd) изменения четных/нечетных элементов</p>
+    <div>
+        <p class="text">Текст 1</p>
+        <p class="text">Текст 2</p>
+        <p class="text">Текст 3</p>
+        <p class="text">Текст 4</p>
+        <a class="link" href="https://github.com/arusabi002/Web/tree/main/Week%203/Homework_3.1" target="_blank">Мой GitHub</a>
+    </div>
+    
+    <h1>Задание 4</h1>
+    <p>Для комбинации чередуем псеводоклассы .list2:first-child:hover</p>
+    <ul>
+        <li class="list2">Особенный</li>
+        <li class="list2">Обычный</li>
+        <li class="list2">Обычный</li>
+        <li class="list2">Обычный</li>
+    </ul>
+
+    <button class="butt2">Обычная</button>
+    <button class="butt2">Обычная</button>
+    <button class="butt2">Обычная</button>
+    <button class="butt2">Особенная</button>
+    
+
+</body>
+</html>

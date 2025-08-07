@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.3</title>
+    <style>
+        h1 {
+            background-color: rgb(255, 208, 100);
+        }
+        p {
+            background-color: rgb(239, 184, 150);
+        }
+        div {
+            background-color: rgb(127, 179, 184);
+        }
+
+        .block {
+            display: block;
+        }
+        .inline {
+            display: inline;
+        }
+
+        .d2 {
+            background-color: rgb(158, 126, 83);
+            margin: 20px;
+        }
+
+        .block2 {
+            display: block;
+            background-color: rgb(195, 162, 118);
+            color: rgb(253, 240, 223);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="task1">Задание 1</h1>
+    <h1>Блочный элемент(h1)</h1>
+    <p>Блочный элемент(p). Начинается с новой строки. Занимает всю страницу.</p>
+    <div>Блочный элемент(div). Можно устанавливать размер. Вкладывать другие элементы</div>
+    <p>Внизу линейный элемент(img). Противоположен блочному. Можно регулировать только ширину.</p>
+    <img src="spyfamily.jpg" alt="spyfamily" width="200px" height="200px">
+    <img src="spyfamily.jpg" alt="spyfamily" width="200px" height="200px">
+    <img src="spyfamily.jpg" alt="spyfamily" width="200px" height="200px">
+
+    <h1>Задание 2</h1>
+    <h1 class="inline">Блочный элемент(h1), преобразованный в линейный</h1>
+    <p class="inline">Блочный элемент(p), преобразованный в линейный с помощью "display: block"</p>
+    <div class="inline">Блочный элемент(div), преобразованный в линейный</div>
+    <p class="inline">Внизу линейный элемент(img), преобразованный в блочный с помощью "display: inline"</p>
+    <img class="block" src="spyfamily.jpg" alt="spyfamily" width="200px" height="200px">
+    <img class="block" src="spyfamily.jpg" alt="spyfamily" width="200px" height="200px">
+    <img class="block" src="spyfamily.jpg" alt="spyfamily" width="200px" height="200px">
+
+    <h1>Задание 3</h1>
+    <div class="d2">
+        <p class="block2">Абзац</p>
+        <img class="block2" src="spyfamily.jpg" alt="spyfamily" width="200px" height="200px">
+        <a class="block2" href="#task1">Якорная ссылка(Задание 1)</a>
+    </div>
+</body>
+</html>
