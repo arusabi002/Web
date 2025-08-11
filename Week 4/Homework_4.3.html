@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.3</title>
+    <style>
+        .static {
+            position: static;
+            background-color: aquamarine;
+            border: 2px solid;
+            width: 200px;
+            height: 200px;
+        }
+
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: rgb(127, 219, 255);
+            border: 2px solid;
+            width: 200px;
+            height: 200px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            background-color: rgba(129, 127, 255, 0.191);
+            border: 2px solid;
+            width: 200px;
+            height: 200px;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            background-color: rgb(187, 127, 255);
+            border: 2px solid;
+            width: 200px;
+            height: 200px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 100px;
+            background-color: rgb(255, 127, 227);
+            border: 2px solid;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Задание 1</h1>
+    <div class="static">static Положение по умолчанию</div>
+    <div class="static">static Положение по умолчанию</div>
+    <div class="static">static Положение по умолчанию</div>
+
+    <h1>Задание 2</h1>
+    <div class="static">static Положение по умолчанию</div>
+    <div class="relative">relative Смещенное положение относительно изначального</div>
+
+    <h1>Задание 3</h1>
+    <div class="relative">
+        relative Смещенное положение относительно изначального
+        <div class="absolute">absolute Смещенное положение относительно родителя с позицей отличной от static</div>
+    </div>
+
+    <h1>Задание 4</h1>
+    <div class="fixed">fixed Устойчивое положение на экране</div>
+
+    <h1>Задание 5</h1>
+    <h2 class="sticky">sticky Устойчивое положение после прокрутки элемента</h2>
+    <p>Немного текста</p>
+    <p>Немного текста</p>
+    <p>Немного текста</p>
+    <p>Немного текста</p>
+    <p>Немного текста</p>
+    <p>Немного текста</p>
+    <p>Немного текста</p>
+    <p>Немного текста</p>
+    <p>Немного текста</p>
+    <p>Немного текста</p>
+</body>
+</html>

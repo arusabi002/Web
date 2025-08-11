@@ -1,0 +1,300 @@
+body {
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+.card {
+    margin-top: 15px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 53px;
+    padding: 40px;
+    border-radius: 32px;
+}
+
+.badge {
+    background-color: #191919;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    width: fit-content;
+    padding: 0 16px;
+    border-radius: 6px;
+    margin-bottom: 48px;
+}
+
+.episode {
+    color: #118DA8;    
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 17px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 70.4px;
+    color: #fff;
+    margin-bottom: 28px;
+}
+
+.subtitle {
+    color: #FFFFFFB2;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    margin-bottom: 18px;
+}
+
+.btn {
+    background-color: #118DA8;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 27px;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 15px 12px 20px;
+}
+
+.card2 {
+    padding: 20px 20px 30px 20px;
+    background-color: #E1EDE6;
+    width: fit-content;
+}
+
+.author {
+    color: #86928B;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.name {
+    color: #2C2D35;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 8px;
+}
+
+.materials {
+    color: #2C2D35;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+.price {
+    color: #598D66;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.btn2 {
+    border: 1px solid #598D66;
+    color: #598D66;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    padding: 21px 106px;
+}
+
+.card3 {
+    width: 360px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.forPadding {
+    padding: 16px;
+}
+
+.name1 {
+    color: #009AF0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 16px;
+}
+
+.content {
+    color: #202842;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 16px;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.username {
+    color: #202842;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+
+.date {
+    color: #1E1E1E80;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.btn3 {
+    background-color: #009AF0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+.card4 {
+    width: 380px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.box1 {
+    padding: 50px 89px 50px 44px;
+}
+
+.title1 {
+    color:#2E363E ;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #2E363E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 24px;
+}
+
+.cost {
+    color: #434B53;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 14px;
+}
+
+.btn4 {
+    background-color: #FED84C;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    border-radius: 8px;
+    border: none;
+    padding: 20px 40px;
+}
+
+.flex {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.author2 {
+    color: #86928B;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.name2 {
+    color: #2C2D35;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 8px;
+}
+
+.materials2 {
+    color: #2C2D35;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+.price2 {
+    color: #598D66;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.btn22 {
+    border: 1px solid #598D66;
+    color: #598D66;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    padding: 21px 80px;
+}
+
+.card5 {
+    background-color: #0C0B15;
+    padding: 30px 30px 40px 30px;
+    width: 330px;
+    border-radius: 20px;
+}
+
+.title2 {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.author3 {
+    color: #809FB8;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.content1 {
+    color: #809FB8;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
