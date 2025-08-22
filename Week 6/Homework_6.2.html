@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.2</title>
+    <style>
+        .box {
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+
+        .box1 {
+            transform: rotate(45deg);
+        }
+        .box2 {
+            transform: scale(2, 0.5);
+        }
+        .box3 {
+            transform: translateX(20px) translateY(15px);
+        }
+        .box4 {
+            transform: skewX(30deg);
+        }
+        .box5 {
+            transition: 1s;
+        }
+        .box5:hover {
+            transform: scale(2, 2) rotate(45deg);
+            background-color: aqua;
+        }
+        .box6 {
+        }
+        .box6:hover {
+            transform: scale(2, 2) rotate(45deg);
+            background-color: aqua;
+        }
+        .box7 {
+            animation: anime 5s infinite;
+        }
+        @keyframes anime {
+            0% {
+                transform: scale(1, 1);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(2, 2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1, 1);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Задание 1</h1>
+    <div class="box box1">rotate поворачивает блок на установленное значение</div>
+    <div class="box box2">scale изменяет размеры относительно изначальных</div>
+    <div class="box box3">translate смещает блок по осям относительно изначального положения</div>
+    <div class="box box4">skew делает перекос элемента по осям X и Y</div>
+
+
+    <p>transition позволяет сделать плавный переход на заданное время</p>
+    <div class="box box5">c transition</div>
+    <div class="box box6">без transition</div>
+
+    <h1>Задание 3</h1>
+    <p>Задали анимацию с помощью свойства animation: назвали ее anime и указали продолжительность 3 сек и бесконечную цикличность.
+        Создали для нее @keyframes anime и в нем для определленного кадра указали стили</p>
+    <div class="box box7"></div>
+</body>
+</html>

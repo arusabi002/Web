@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.1</title>
+    <style>
+        .box {
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+        }
+
+        .box1 {
+            background-color: rgb(198, 192, 192);
+            box-shadow: 8px 0 5px 5px rgba(102, 51, 153, 0.677);
+        }
+
+        .box2 {
+            background-color: rgb(198, 192, 192);
+            box-shadow: 0 8px 5px 0 rgba(137, 43, 226, 0.345);
+        }
+
+        .box3 {
+            background-color: rgb(198, 192, 192);
+            box-shadow: 0 0 8px 5px violet;
+        }
+
+        .text1 {
+            text-shadow: 2px 3px 0 rgba(223, 36, 36, 0.596);
+        }
+        .text2 {
+            text-shadow: 6px 0 4px rgba(1, 158, 163, 0.519);
+        }
+        .text3 {
+            text-shadow: 0 5px 4px rgb(88, 117, 88);
+        }
+    
+        .box4 {
+            background: linear-gradient(to right, blue, lightpink);
+        }
+        .box5 {
+            background: linear-gradient(blue, lightpink);
+        }
+        .box6 {
+            background: linear-gradient(to right bottom, blue, lightpink);
+        }
+        .box7 {
+            background: radial-gradient(circle, blue, lightpink);
+        }
+        .box8 {
+            background: radial-gradient(ellipse closest-side at 25%, blue, lightpink);
+        }
+    </style>
+</head>
+<body>
+    <h1>Задание 1</h1>
+    <div class="box box1">Тень со смещением по оси Х</div>
+    <div class="box box2">Тень со смещением по оси Y</div>
+    <div class="box box3">Тень без смещения, но с большим радиусом </div>
+
+    <h1>Задание 2</h1>
+    <h2 class="text1">Тень с нулевым радиусом размытия</h2>
+    <h2 class="text2">Тень со смещением по оси Х</h2>
+    <h2 class="text3">Тень со смещением по оси Y</h2>
+
+    <h1>Задание 3</h1>
+    <div class="box box4">Линейный градиент слева направо</div>
+    <div class="box box5">Линейный градиент снизу вверх(по умолчанию)</div>
+    <div class="box box6">Линейный градиент к правому нижнему углу</div>
+
+    <h1>Задание 4</h1>
+    <div class="box box7">Радиальный градиент круг</div>
+    <div class="box box8">Радиальный градиент эллипс/ Позиция 25% от левой стороны</div>
+</body>
+</html>

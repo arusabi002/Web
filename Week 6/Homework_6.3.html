@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.3</title>
+    <style>
+        .p1 {
+            font-size: 20px;
+        }
+
+        .p1::before {
+            display: block;
+            content: "::before Строка перед текстом. 1-й куплет";
+            font-size: 22px;
+            color: lightblue;
+        }
+
+        .p2 {
+            font-size: 20px;
+        }
+
+        .p2::before {
+            display: block;
+            content: "::before Строка перед текстом. Припев";
+            font-size: 22px;
+            color: lightcoral;
+        }
+
+        .p3 {
+            font-size: 20px;
+        }
+
+        .p3::before {
+            display: block;
+            content: "::before Строка перед текстом. Пост-припев";
+            font-size: 22px;
+            color: lightgreen;
+        }
+
+        .header1 {
+            color: gray;
+        }
+
+        .header1::after {
+            content: " -#";
+        }
+
+        .div1 {
+            padding: auto;
+            margin: 10px 0;
+            width: fit-content;
+            height: fit-content;
+            background-color: bisque;
+        }
+
+        .div1::before {
+            content: "--------------";
+            display: block;
+        }
+
+        .div1::after {
+            content: "--------------";
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Задание 1</h1>
+    <p>Использовали ::before чтобы добавить текст не изменяя html-элементы</p>
+    <p class="p1">I tried to hide but something broke <br>
+        I tried to sing, couldn't hit the notes<br>
+        The words kept catching in my throat<br>
+        I tried to smile, I was suffocating though<br>
+        But here with you, I can finally breathe<br>
+        You say you're no good, but you're good for me<br>
+        I've been hoping to change, now I know we can change<br>
+        But I won't if you're not by my side</p>
+
+    <p class="p2">Why does it feel right every time I let you in?<br>
+        Why does it feel like I can tell you anything?<br>
+        All the secrets that keep me in chains, and<br>
+        All the damage that might make me dangerous<br>
+        You got a dark side, guess you're not the only one<br>
+        What if we both tried fighting what we're running from?<br>
+        We can't fix it if we never face it<br>
+        What if we find a way to escape it?</p>
+
+    <p class="p3">We could be free, free<br>
+        We can't fix it if we never face it<br>
+        Let the past be the past 'til it's weightless</p>
+
+    <h1>Задание 2</h1>
+    <p>Использовали ::after чтобы добавить текст не изменяя html-элементы</p>
+    <h2 class="header1">Your idol</h2>
+    <h2 class="header1">Free</h2>
+    <h2 class="header1">What it sounds like</h2>
+    <h2 class="header1">Takedown</h2>
+
+    <h1>Задание 3</h1>
+    <div class="div1">Контент 1</div>
+    <div class="div1">Контент 2</div>
+    <div class="div1">Контент 3</div>
+</body>
+
+</html>
