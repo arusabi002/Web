@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.2</title>
+</head>
+
+<body>
+    <script>
+        // Задание 1
+        console.log("Задание 1")
+
+        let person = {
+            name: 'Ару',
+            age: 22,
+            city: 'Атырау'
+        }
+
+        console.log(person);
+
+        // Задание 2
+        console.log("Задание 2")
+
+        console.log(person.name);
+        console.log(person.age);
+
+        person.city = "Алматы";
+        console.log(person.city);
+
+        // Задание 3
+        console.log("Задание 3")
+
+        person.greet = function () {
+            console.log(`"Привет, меня зовут ` +
+                this.name + `, мне ` + this.age + ` лет!"`);
+        }
+
+        person.greet();
+
+        // Задание 4
+        console.log("Задание 4")
+
+        let obj1 = { a: 10, b: 20 };
+        let obj2 = { a: 10, b: 20 };
+
+        console.log(obj1 == obj2);
+        console.log(obj1 === obj2);
+        // Два объекта считаются равными только если это один и тот же объект
+
+        // Задание 5
+        console.log("Задание 5")
+
+        let book = {
+            title: "Harry Potter and the prisoner of Azkaban",
+            author: "J. K. Rowling",
+            details: {
+                year: 1999,
+                pages: 317
+            }
+        }
+
+        let copyBook = Object.assign({}, book);
+
+        book.details.year = 2000;
+
+        console.log(book);
+        console.log(copyBook);
+        // Объект details мы не копировали специально, 
+        // поэтому и там и там это один и тот же объект
+
+        // Задание 6
+        console.log("Задание 6")
+
+        let calculator = {
+            a: 1,
+            b: 2,
+            sum: function () {
+                return this.a + this.b;
+            },
+            multiply: function () {
+                return this.a * this.b;
+            }
+        }
+
+        console.log(calculator.sum());
+        console.log(calculator.multiply());
+
+        // Задание 7
+        console.log("Задание 7")
+
+        const car = {
+            brand: "BMW",
+            model: "M5"
+        }
+        console.log(car)
+
+        car.model = "X1"
+        console.log(car)
+        // const не позволяет менять car, как переменную,
+        // но если вызывать свойства по отдельности их возможно менять
+        
+    </script>
+</body>
+
+</html>
