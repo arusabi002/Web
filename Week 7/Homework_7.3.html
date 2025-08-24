@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.3</title>
+</head>
+<body>
+    <script>
+        // Задание 1
+        console.log("Задание 1");
+
+        let a = 10;
+        let b = 5;
+        let c = 2;
+
+        console.log(a + b + c);
+        console.log(b - (a + c));
+        console.log(a * b / c);
+        console.log(a % b);
+
+        // Задание 2
+        console.log("Задание 2");
+
+        let x = 7;
+        console.log(x);
+        // console.log(x++); 7, сначала операция потом инкремент
+        // console.log(++x); 9, сначала инкремент потом операция
+        console.log(x++ + ++x);
+        // console.log(x--); 7, сначала операция потом инкремент
+        // console.log(--x); 5, сначала инкремент потом операция
+        console.log(x-- - --x);
+
+        // Задание 3
+        console.log("Задание 3");
+
+        let sum = 4 + 5;
+        console.log("The result is: " + String(sum));
+
+        // Задание 4
+        console.log("Задание 4");
+
+        console.log(a > b && a > 0 && b > 0);
+        console.log(c < 10 || c == 2);
+        console.log(a / c != 5);
+
+        // Задание 5
+        console.log("Задание 5");
+
+        console.log(10 == "10"); // сравнивает значения
+        console.log(10 === "10"); // сравнивает значения и типы данных
+
+        // Задание 6
+        console.log("Задание 6");
+
+        x = 2;
+        let y = 2;
+        console.log((x % 2 == 0 || x % 3 == 0) && x % 6 != 0);
+        console.log(!(y > 10 || y < 5));
+    </script>
+</body>
+</html>

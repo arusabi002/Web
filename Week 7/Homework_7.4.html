@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.4</title>
+</head>
+
+<body>
+    <script>
+        // Задание 1
+        console.log("Задание 1");
+
+        let num = prompt("Ввведите число: ") > 10 ? `"Число больше 10"` : `"Число меньше или равно 10"`;
+        console.log(num);
+
+        // Задание 2
+        console.log("Задание 2");
+
+        let toDelete = confirm("Вы хотите удалить файл?") ? `"Файл удален"` : `"Удаление отменено"`;
+        console.log(toDelete);
+
+        // Задание 3
+        console.log("Задание 3");
+
+        let age = prompt("Ввведите свой возраст: ")
+
+        if (age < 18) {
+            console.log(`"Вы еще подросток"`);
+        } else if (age >= 18 && age <= 30) {
+            console.log(`"Вы молодой взрослый"`);
+        } else {
+            console.log(`"Вы взрослый"`);
+        }
+
+        // Задание 4
+        console.log("Задание 4");
+
+        let num2 = prompt("Ввведите число: ") % 2 == 0 ? `"Четное число"` : `"Нечетное число"`;
+        console.log(num2);
+
+        // Задание 5
+        console.log("Задание 5");
+
+        let day = Number(prompt("Введите день недели(1 до 7): "))
+
+        switch (day) {
+            case 1:
+                console.log("Понедельник");
+                break;
+            case 2:
+                console.log("Вторник");
+                break;
+            case 3:
+                console.log("Среда");
+                break;
+            case 4:
+                console.log("Четверг");
+                break;
+            case 5:
+                console.log("Пятница");
+                break;
+            case 6:
+                console.log("Суббота");
+                break;
+            case 7:
+                console.log("Воскресенье");
+                break;
+            default:
+                console.log(`"Некорректное значение"`);
+                break;
+        }
+
+        // Задание 6
+        console.log("Задание 6");
+
+        let x = prompt("Введите 1-е число: ");
+        let y = prompt("Введите 2-е число: ");
+
+        if (x == y) {
+            console.log(`"Числа равны"`);
+        } else {
+            console.log(x > y ? `"Первое число больше"` : `"Второе число больше"`);
+        }
+
+        // Задание 7
+        console.log("Задание 7");
+
+        let month = Number(prompt("Введите номер месяца(1 до 12): "));
+
+        switch (month) {
+            case 1:
+            case 2:
+            case 12:
+                console.log("Зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                console.log("Весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                console.log("Лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                console.log("Осень");
+                break;
+            default:
+                console.log("Некорректное число");
+                break;
+        }
+    </script>
+</body>
+
+</html>

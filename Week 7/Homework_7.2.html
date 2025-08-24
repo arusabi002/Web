@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.2</title>
+</head>
+<body>
+    <script>
+        // Задание 1
+        let l1 = 0;
+        console.log(l1);
+        l1 = 1354;
+        console.log(l1);
+        // let позволяет менять значение переменной
+        const c1 = 2342;
+        console.log(c1);
+        // c1 = 1; Выйдет ошибка
+        console.log(c1);
+
+        // const НЕ позволяет менять значение переменной
+
+        // Задание 2
+        /* var также используется для объявления переменной.
+        Считается устаревшим так как позволяет как менять значение
+        так и заново объявлять переменную, что может привести к ошибкам в коде
+        */
+
+        // Задание 3
+        let num = 1;
+        console.log(num);
+        console.log(typeof num);
+        
+
+        let str = "1";
+        console.log(str);
+        console.log(typeof str);
+
+        let bool = true;
+        console.log(bool);
+        console.log(typeof bool);
+
+        let nullVar = null;
+        console.log(nullVar);
+        console.log(typeof nullVar);
+
+        let undefinedVar = undefined;
+        console.log(undefinedVar);
+        console.log(typeof undefinedVar);
+
+        let nan = NaN;
+        console.log(nan);
+        console.log(typeof nan);
+
+        // Задание 4
+
+        let strNum = String(num);
+        console.log(strNum);
+
+        let numStr = Number(str);
+        console.log(numStr);
+
+        let strUndef = String(undefinedVar);
+        let strNull = String(nullVar);
+
+        let numUndef = Number(undefinedVar);
+        let numNull = Number(nullVar);
+
+        console.log(strUndef);
+        console.log(strNull);
+        // String преобразовал в строки
+        console.log(numUndef);
+        console.log(numNull);
+        // Number превратил в числа NaN это не существующее число, null - тоже самое, что 0
+
+        // Задание 5
+        let inNum = 12;
+        console.log(inNum);
+
+        inNum = "Hopa"
+        console.log(inNum);
+        // Хорошо работает) Мы можем менять не только значение, но и тип данных
+
+        // Задание 6
+        let text = prompt("Как Вас зовут? Сколько Вам лет?", '');
+        console.log(text);
+
+    </script>
+</body>
+</html>
