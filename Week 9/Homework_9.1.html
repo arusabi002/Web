@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.1</title>
+</head>
+<body>
+    <script>
+        // Задание 1
+        console.log("Задание 1")
+
+        let fruits = [`"Яблоко"`, `"Банан"`, `"Апельсин"`]
+        console.log(fruits)
+
+        // Задание 2
+        console.log("Задание 2")
+        
+        console.log(fruits[0])
+        console.log(fruits.at(-1)) // массив js не принимает отрицательные значения индексов напрямую
+
+        fruits.push(`"Груша"`)
+        console.log(fruits)
+
+        // Задание 3
+        console.log("Задание 3")
+
+        fruits.pop()
+        console.log(fruits)
+
+        fruits.shift()
+        console.log(fruits)
+
+        // Задание 4
+        console.log("Задание 4")
+
+        fruits.forEach((element) => console.log(element))
+
+        // Задание 5
+        console.log("Задание 5")
+
+        let lengths = fruits.map(element => element.length)
+        console.log(lengths)
+
+        // Задание 6
+        console.log("Задание 6")
+
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        console.log(numbers)
+
+        let evenNumbers = numbers.filter(element => element % 2 === 0)
+        console.log(evenNumbers)
+
+        // Задание 7
+        console.log("Задание 7")
+
+        let sum = numbers.reduce((acc, num) => acc + num, 0)
+        console.log(sum)
+
+        // Задание 8
+        console.log("Задание 8")
+
+        console.log(numbers.find(num => num > 5))
+
+        // Задание 9
+        console.log("Задание 9")
+
+        let arr1 = [1, 2, 3]
+        let arr2 = [4, 5, 6]
+
+        let array = arr1.concat(arr2)
+        console.log(array)
+
+        // Задание 10
+        console.log("Задание 10")
+
+        console.log(fruits.includes(`"Банан"`))
+        
+        // Задание 11
+        console.log("Задание 11")
+
+        console.log(fruits.reverse())
+        
+    </script>
+</body>
+</html>
