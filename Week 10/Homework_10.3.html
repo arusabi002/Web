@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.3</title>
+</head>
+<body>
+    <script>
+        // Задание 1
+        console.log("Задание 1")
+
+        localStorage.setItem('greeting', '"Привет, мир!"')
+        console.log(localStorage.getItem('greeting'))
+
+        // Задание 2
+        console.log("Задание 2")
+
+        localStorage.removeItem('greeting')
+        console.log(localStorage.getItem('greeting'))
+
+        // Задание 3
+        console.log("Задание 3")
+
+        const person = {
+            'name': 'Аружан',
+            'age': 23,
+            'city': 'Almaty'
+        }
+
+        const personJSON = JSON.stringify(person)
+        localStorage.setItem('person', personJSON)
+        console.log(localStorage.getItem('person'))
+
+        const parsedUser = JSON.parse(localStorage.getItem('person'))
+        console.log(parsedUser)
+
+        // Задание 4
+        console.log("Задание 4")
+
+        let modifiedPerson = JSON.parse(localStorage.getItem('person'))
+        modifiedPerson.country = "Kazakhstan"
+        console.log(modifiedPerson)
+
+        localStorage.setItem('person', JSON.stringify(modifiedPerson))
+        console.log(localStorage.getItem('person'))
+
+        // Задание 5
+        console.log("Задание 5")
+
+        let isUserExist = localStorage.getItem('user')
+
+        if(isUserExist){
+            console.log(isUserExist)
+        } else {
+            const user = {
+                'login': 'dreamcrusher8',
+                'password': 'secret'
+            }
+            localStorage.setItem('user', JSON.stringify(user))
+            console.log("Создали нового пользователя и отправили в localStorage")
+        }
+
+        // Задание 6
+        console.log("Задание 6")
+
+        localStorage.clear()
+        console.log('localStorage пуст: ' ,localStorage.getItem('person'))
+
+        // Задание 7
+        console.log("Задание 7")
+
+        let objArray = []
+        let task1 = {'title': 'task1', 'completed': false}
+        let task2 = {'title': 'task2', 'completed': true}
+        let task3 = {'title': 'task3', 'completed': false}
+
+        objArray.push(task1)
+        objArray.push(task2)
+        objArray.push(task3)
+
+        console.log(objArray)
+
+        localStorage.setItem('taskbar', JSON.stringify(objArray))
+        console.log(localStorage.getItem('taskbar'))
+
+        // Задание 8
+        console.log("Задание 8")
+
+        let modifiedArray = JSON.parse(localStorage.getItem('taskbar'))
+        modifiedArray[0].completed = true
+
+        localStorage.setItem('taskbar', JSON.stringify(modifiedArray))
+        console.log(localStorage.getItem('taskbar'))
+
+    </script>
+</body>
+</html>

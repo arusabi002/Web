@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.2</title>
+</head>
+
+<body>
+    <!-- Задание 1 -->
+    <h1>Задание 1</h1>
+
+    <button class="btn" onclick="console.log('Кнопка нажата!')">Click me !</button>
+
+    <!-- Задание 2 -->
+    <h1>Задание 2</h1>
+
+    <button id="jsButton">Нажми меня</button>
+
+    <!-- Задание 3 -->
+    <h1>Задание 3</h1>
+    <div id="myDiv" style="width: 200px; height: 200px;
+    background-color: gray;"></div>
+
+    <!-- Задание 4 -->
+    <h1>Задание 4</h1>
+
+    <input type="text" id="textInput">
+
+    <!-- Задание 5 -->
+    <h1>Задание 5</h1>
+
+    <a href="https://example.com" id="myLink" >Перейти на сайт</a>
+
+    <!-- Задание 6 -->
+    <h1>Задание 6</h1>
+
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Задание 7 -->
+    <h1>Задание 7</h1>
+
+    <input type="text" id="keyboardInput">
+
+    <script>
+        // Задание 2
+        const btn = document.getElementById("jsButton")
+
+        btn.addEventListener('click', () => {
+            console.log("Событие обработано через JS")
+        })
+
+        // Задание 3
+        const box = document.getElementById("myDiv")
+
+        box.addEventListener('click', () => {
+            box.style.backgroundColor = 'blue'
+        })
+
+        box.addEventListener('mouseover', () => {
+            console.log("Элемент нажат")
+        })
+
+        // Задание 4
+        const input = document.getElementById("textInput")
+
+        input.addEventListener('keydown', (event) => {
+            console.log(event.key)
+        })
+        
+        // Задание 5
+        const link = document.getElementById("myLink")
+
+        link.addEventListener('click', () => {
+            console.log("Переход по ссылке отменен")
+            event.preventDefault()
+        })
+
+        // Задание 6
+        const list = document.getElementById("list")
+
+        list.addEventListener('click', (event) => {
+            if(event.target.tagName === "LI"){
+                console.log(event.target.textContent)
+            }
+        })
+
+        // Задание 7
+        const inputCode = document.getElementById("keyboardInput")
+
+        inputCode.addEventListener('keydown', (event) => {
+            console.log(event.code)
+        })
+    </script>
+</body>
+
+</html>

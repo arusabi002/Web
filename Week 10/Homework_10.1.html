@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.1</title>
+</head>
+<body>
+    <!-- Задание 1 -->
+    <h1>Задание 1</h1>
+    <p id="message">Привет, мир!</p>
+
+    <!-- Задание 2 -->
+    <h1>Задание 2</h1>
+    <div class="box" style="width: 200px; height: 200px; 
+    background-color: gray; margin: 10px;"></div>
+    <div class="box" style="width: 200px; height: 200px; 
+    background-color: gray; margin: 10px;"></div>
+
+    <!-- Задание 3 -->
+    <h1>Задание 3</h1>
+    <div class="box" style="width: 200px; height: 200px; 
+    background-color: gray; margin: 10px;"></div>
+    <p id="text">Текст 1</p>
+    <p id="text">Текст 2</p>
+
+    <!-- Задание 4 -->
+    <h1>Задание 4</h1>
+    <p class="highlight">Это выделенный абзац</p>
+    <p>Это обычный абзац</p>
+    <p>Это обычный абзац</p>
+    <p class="highlight">Это выделенный абзац</p>
+    <p>Это обычный абзац</p>
+    <p class="highlight">Это выделенный абзац</p>
+    <p class="highlight">Это выделенный абзац</p>
+    <p>Это обычный абзац</p>
+    <script>
+        // Задание 1
+        let message = document.getElementById("message")
+        message.textContent = "Добро пожаловать в JavaScript!"
+
+        // Задание 2
+        let boxes = document.getElementsByClassName("box")
+        for(let i = 0; i < boxes.length; i++){
+            boxes[i].style.backgroundColor = "green"
+        }
+
+        // Задание 3
+        let paragraph = document.querySelector("#text")
+        paragraph.textContent = "Измененный текст"
+
+        let boxes2 = document.querySelectorAll(".box") 
+        boxes2.forEach(element => {
+            element.style.border = "3px solid black"
+        })
+
+        // Задание 4
+        let highlighted = document.querySelectorAll(".highlight")
+        highlighted.forEach(el => {
+            el.style.color = "red"
+        })
+    </script>
+</body>
+</html>
