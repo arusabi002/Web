@@ -76,7 +76,7 @@
         // Задание 5
         const link = document.getElementById("myLink")
 
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (event) => {
             console.log("Переход по ссылке отменен")
             event.preventDefault()
         })

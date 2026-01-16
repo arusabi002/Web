@@ -1,0 +1,89 @@
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+body input,
+body button {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    border-radius: 32px;
+    width: 500px;
+    height: fit-content;
+    padding: 48px 32px;
+    gap: 32px;
+}
+
+.container img {
+    width: 152px;
+    height: 40px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.box p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #707070;
+}
+
+.box input {
+    border: 1px solid #E6E6E6;
+    border-radius: 12px;
+    outline: none;
+    background: none;
+    width: 436px;
+    height: 56px;
+    padding: 16px;
+}
+
+.box input::placeholder {
+    color: #BDBDBD;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.login-button {
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    padding: 12px 24px;
+    background-color: #0077B6;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.register {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #6c6c6c;
+}
+
+.register a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #0064ae;
+}

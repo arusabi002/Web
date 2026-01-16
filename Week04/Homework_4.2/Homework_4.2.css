@@ -279,7 +279,6 @@ footer {
 
 .end {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -295,8 +294,8 @@ footer {
 }
 
 .end .menu {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     list-style-type: none;
 }
 

@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body input {
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    margin: 48px 220px 0 220px;
+    align-self: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 1000px;
+}
+
+.add-news {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.box p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #707070;
+}
+
+.box input {
+    outline: none;
+    width: 1000px;
+    height: 56px;
+    border: 1px solid #E6E6E6;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.box input::placeholder {
+    color: #BDBDBD;
+}
+
+.box select {
+    outline: none;
+    width: 1000px;
+    height: 56px;
+    border: 1px solid #E6E6E6;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #BDBDBD;
+}
+
+.box .cover-input {
+    background-color: #C9C9C9;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 125%;
+    padding: 0px;
+}
+
+.cover-input::file-selector-button {
+    border: none;
+    width: 138px;
+    height: 100%;
+    margin-right: 16px;
+    border-right: 1px solid #E6E6E6;
+    background-color: #0077B6;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    cursor: pointer;
+}
+
+.cover-input::file-selector-button:hover {
+    filter: brightness(90%);
+}

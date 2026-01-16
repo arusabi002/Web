@@ -334,7 +334,7 @@ footer {
     color: #86928B;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 510px) {
 header {
     background-color: #E1EDE6;
 }

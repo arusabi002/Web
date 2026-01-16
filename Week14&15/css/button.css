@@ -1,0 +1,46 @@
+.button {
+    padding-block: 12px;
+    padding-inline: 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: brightness 150ms ease-in-out;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button:hover {
+    filter: brightness(90%);
+}
+
+.button--small {
+    padding-block: 8px;
+    padding-inline: 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.button--blue {
+    background-color: #0077b6;
+    color: #fff;
+}
+
+.button--red {
+    background-color: #c1121f;
+    color: #fff;
+}
+
+.button--green {
+    position: fixed;
+    right: 56px;
+    bottom: 56px;
+    background-color: #52B788;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    padding: 24px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #FFFFFF;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Категории</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/categories.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="./index.html" class="header__logo">
+            <img src="./img/Logo.svg" alt="Лого">
+        </a>
+
+        <nav class="header__nav">
+            <ol class="header__nav-list">
+                <li>
+                    <a href="./index.html" class="header__nav-link header__nav-link--active"
+                        aria-current="page">Новости</a>
+                </li>
+
+                <li>
+                    <a href="./categories.html" class="header__nav-link">Категории</a>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="header__auth">
+            <a href="./login.html" class="button button--blue">Войти</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Категории</h1>
+        <div class="categories-grid">
+            <div class="categories-card">
+                <h2 class="categories-card__title">
+                    Спорт
+                </h2>
+                <div class="categories-card__actions">
+                    <a href="./edit-categories.html&id=1" class="button button--blue button--small">
+                        Редактировать
+                    </a>
+
+                    <button type="button" class="button button--red button--small" onclick="deleteCategories(1)">
+                        Удалить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/categories.js"></script>
+</body>
+
+</html>

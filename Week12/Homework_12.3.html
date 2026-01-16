@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.3</title>
+</head>
+
+<body>
+    <script>
+        // Задание 1
+
+        setTimeout(() => {
+            console.log(`Задание 1: "Привет, мир!"`)
+        }, 2000)
+
+        // Задание 2
+        // Задание 3
+
+        const time = setInterval(() => {
+            const now = new Date()
+            const hours = now.getHours()
+            const minutes = now.getMinutes()
+            const seconds = now.getSeconds()
+
+            console.log(`Задание 2 и 3: ${hours}:${minutes}:${seconds}`)
+        }, 1000)
+
+        setTimeout(() => clearInterval(time), 5000)
+
+        // Задание 4
+
+        function fetchData() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve("Данные получены")
+                }, 3000)
+            })
+        }
+
+        fetchData()
+            .then(result => console.log('Задание 4: ', result))
+
+        // Задание 5
+
+        function fetchDataWithError() {
+            return new Promise((reject) =>
+                setTimeout(() => {
+                    reject(`"Ошибка загрузки!"`)
+                }, 2000))
+        }
+
+        fetchDataWithError()
+            .then(result => console.log("Задание 5: ", result)
+            )
+            .catch(error => console.log(error)
+            )
+
+        // Задание 6
+
+        async function fetchDataAsync() {
+            try {
+                const response = await fetchData()
+                console.log('Задание 6: ', response)
+            } catch (error) {
+                console.log('Ошибка: ', error)
+            }
+        }
+
+        fetchDataAsync()
+
+        //Задание 7
+
+        async function fetchDataWithErrorAsync() {
+            try {
+                const response = await fetchDataWithError()
+                console.log("Задание 7: ", response)
+            } catch (error) {
+                console.log(error)
+
+            }
+        }
+
+        fetchDataWithErrorAsync()
+
+        // Задание 8
+
+        
+    </script>
+</body>
+
+</html>

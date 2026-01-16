@@ -1,0 +1,31 @@
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 48px;
+    align-items: center;
+    margin-inline: 56px;
+    padding-block: 24px;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.header__nav-link {
+    padding-block: 8px;
+    padding-inline: 24px;
+    text-decoration: none;
+    color: #3d3d3d;
+    border-radius: 8px;
+}
+
+.header__nav-link--active {
+    background-color: #f0f0f0;
+}
+
+.header__auth {
+    display: flex;
+    gap: 24px;
+}
