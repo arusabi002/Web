@@ -19,7 +19,8 @@ main {
     width: 1000px;
 }
 
-.add-news {
+.add-news,
+.add-categories {
     margin: 0;
     font-size: 32px;
     font-weight: 700;

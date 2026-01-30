@@ -86,7 +86,60 @@
 
         // Задание 8
 
-        
+        function task1() {
+            return new Promise((resolve) => {
+                setTimeout(() => { resolve("Task 1 - Успех") }, 1000)
+            })
+        }
+
+        function task2() {
+            return new Promise((resolve) => {
+                setTimeout(() => { resolve("Task 2 - Успех") }, 2000)
+            })
+        }
+
+        async function runTasks() {
+            const t1 = await task1();
+            console.log('Задание 8: ', t1)
+
+            const t2 = await task2();
+            console.log('Задание 8: ', t2)
+
+        }
+
+        runTasks();
+
+        // Задание 9
+
+        function taskA() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => { resolve("Task A - Успех") } ,2000)
+            })
+        }
+
+        function taskB() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => { resolve("Task B - Успех") },3000)
+            })
+        }
+
+        Promise.all([taskA(), taskB()])
+        .then(
+            result => {
+                console.log('Задание 9: ', result[0])
+                console.log('Задание 9: ',  result[1])
+            }
+        )
+        // Задание 10
+
+        async function delayedMessage() {
+            const message = prompt('Введите Ваше сообщение: ')
+            const delay = Number(prompt('Введите Вашу задержку(в миллисекундах): '))
+
+            await setTimeout(() => {console.log('Задание 10: ', message)}, delay)
+        }
+
+        delayedMessage()
     </script>
 </body>
 

@@ -2,40 +2,32 @@ const authToken = localStorage.getItem("authToken");
 
 const headerAuth = document.querySelector(".header__auth");
 
-document.querySelector('.js-create-news').addEventListener('click', async (event) => {
+document.querySelector('.js-create-categories').addEventListener('click', async (event) => {
     event.preventDefault();
 
-    const title = document.querySelector('.name-input').value;
-    const content = document.querySelector('.content-input').value;
-    const categoryId = document.querySelector('.category-input').value;
-    const thumbnail = document.querySelector('.cover-input').files[0];
+    const name = document.querySelector('.nameC-input').value.trim();;
 
-    if (!title || !categoryId || !content || !thumbnail){
+    if (!name){
         alert('Пожалуйста, заполните все поля');
         return;
     }
 
-    const formData = new FormData();
-    formData.append('title', title);
-    formData.append('content', content);
-    formData.append('categoryId', categoryId);
-    formData.append('thumbnail', thumbnail);
-
     try {
-        const response = await fetch('https://webfinalapi.mobydev.kz/news', {
+        const response = await fetch('https://webfinalapi.mobydev.kz/category', {
             method: 'POST',
             headers: {
                 "Authorization": `Bearer ${authToken}`,
+                "Content-Type": "application/json",
                 'Accept': 'application/json'
             },
-            body: formData
+            body: JSON.stringify({name})
         });
 
         if(response.ok) {
-            alert('Новость успешно добавлена!')
-            window.location.href = './index.html';
+            alert('Категория успешно добавлена!')
+            window.location.href = './categories.html';
         } else {
-            alert("Ошибка при добавлении новости!")
+            alert("Ошибка при добавлении категории!")
         }
     } catch (error) {
         console.error('Ошибка', error);

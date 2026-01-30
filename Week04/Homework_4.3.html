@@ -15,18 +15,21 @@
 
         .relative {
             position: relative;
-            top: 20px;
-            left: 20px;
             background-color: rgb(127, 219, 255);
             border: 2px solid;
             width: 200px;
             height: 200px;
         }
 
+        .relative1 {
+            position: relative;
+            border: 2px solid;
+        }
+
         .absolute {
             position: absolute;
-            /* top: 100px;
-            left: 100px; */
+            bottom: 0px;
+            right: 0px;
             background-color: rgba(129, 127, 255, 0.191);
             border: 2px solid;
             width: 200px;
@@ -64,12 +67,14 @@
     <div class="relative">relative Смещенное положение относительно изначального</div>
 
     <h1>Задание 3</h1>
-    <div class="relative">
-        relative Смещенное положение относительно изначального
+    <div class="relative1">
+        
+        <div class="relative">relative Смещенное положение относительно изначального</div>
+        <div class="relative">relative Смещенное положение относительно изначального</div>
         <div class="absolute">absolute Смещенное положение относительно родителя с позицей отличной от static</div>
     </div>
+    
 
-    <div class="absolute">absolute Смещенное положение относительно родителя с позицей отличной от static</div>
 
     <h1>Задание 4</h1>
     <div class="fixed">fixed Устойчивое положение на экране</div>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13.3</title>
+</head>
+
+<body>
+    <!-- Задание 3, 4, 5, 6 -->
+    <p id="loader"></p>
+    <p id="error" style="color: red;"></p>
+
+    <ol id="postList">
+
+    </ol>
+
+    <script>
+        // Задание 1
+        /*
+        AJAX - это способ, который позволяет обновлять данные на странице в реальном времени, без перезагрузки.
+        Это совокупность http, css, js и XMLHttpRequest. Запросы на сервер отправляются на сервер фоном.
+        При получении данных отдельная часть страницы обновляется самостоятельно.
+
+        Эта технология используется повсеместно. Например, в мессенджерах когда мы получаем сообщения
+        в реальном времени, или на платформах, по типу YouTube и Instagram, когда лента рекомендаций
+        обновляется при прокрутке вниз
+        */
+
+        // Задание 2
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const data = JSON.parse(xhr.responseText);
+                console.log('Задание 2: ')
+                console.log(data);
+            } else {
+                console.error('Ошибка загрузки данных:', xhr.status);
+            }
+        };
+        xhr.onerror = function () {
+            console.error('Ошибка соединения');
+        };
+        xhr.send(); // Отправляем запрос
+
+        // Задание 3, 4, 6
+        const loader = document.getElementById('loader');
+        const error = document.getElementById('error');
+
+        loader.textContent = 'Загрузка данных...';
+        function renderPostList(posts) {
+            const postList = document.getElementById('postList');
+            posts.forEach(post => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `UserId: ${post.userId}. ${post.title} (${post.body})`;
+                postList.appendChild(listItem);
+            });
+        }
+
+        const xhr2 = new XMLHttpRequest();
+        xhr2.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+        xhr2.onload = function () {
+            loader.textContent = '';
+            if (xhr2.status === 200) {
+                const posts = JSON.parse(xhr2.responseText);
+                renderPostList(posts); // Вызов функции для рендеринга списка
+            } else {
+                console.error('Ошибка загрузки данных:', xhr2.status);
+            }
+        };
+        xhr2.onerror = function () {
+            console.error('Ошибка соединения');
+        };
+        xhr2.send();
+
+        // Задание 5
+        const xhr3 = new XMLHttpRequest();
+        xhr3.open('GET', 'https://api.example.com/data', true);
+        xhr3.onload = function () {
+            if (xhr3.status === 200) {
+                const data = JSON.parse(xhr3.responseText);
+                console.log(data);
+            } else {
+                console.error('Ошибка загрузки данных:', xhr3.status);
+            }
+        };
+        xhr3.onerror = function () {
+            error.textContent = 'Ошибка соединения с сервером';
+            console.error('Ошибка соединения');
+        };
+        xhr3.send(); // Отправляем запрос
+
+    </script>
+</body>
+
+</html>

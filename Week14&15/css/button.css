@@ -44,3 +44,8 @@
     font-weight: 400;
     color: #FFFFFF;
 }
+
+.js-create-news,
+.js-create-categories {
+    width: fit-content;
+}

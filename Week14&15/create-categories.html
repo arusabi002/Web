@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Категории</title>
+    <title>Новости</title>
 
-    <link rel="stylesheet" href="./css/categories.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/create.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,12 +26,12 @@
         <nav class="header__nav">
             <ol class="header__nav-list">
                 <li>
-                    <a href="./index.html" class="header__nav-link
+                    <a href="./index.html" class="header__nav-link header__nav-link--active"
                         aria-current="page">Новости</a>
                 </li>
 
                 <li>
-                    <a href="./categories.html" class="header__nav-link header__nav-link--active"">Категории</a>
+                    <a href="./categories.html" class="header__nav-link">Категории</a>
                 </li>
             </ol>
         </nav>
@@ -41,26 +42,17 @@
     </header>
 
     <main>
-        <h1 class="title">Категории</h1>
-        <div class="categories-grid">
-            <div class="categories-card">
-                <h2 class="categories-card__title">
-                    Спорт
-                </h2>
-                <div class="categories-card__actions">
-                    <a href="" class="button button--blue button--small">
-                        Редактировать
-                    </a>
-
-                    <button type="button" class="button button--red button--small" onclick="deleteCategories(1)">
-                        Удалить
-                    </button>
-                </div>
+        <form class="container">
+            <h2 class="add-categories">Создание категории</h2>
+            <div class="box">
+                <p class="categories-name">Название</p>
+                <input class="nameC-input" type="text" placeholder="Введите название">
             </div>
-        </div>
+            <button class="button button--blue js-create-categories">Добавить категорию</button>
+        </form>
     </main>
 
-    <script src="./js/categories.js"></script>
+    <script src="./js/create-categories.js"></script>
 </body>
 
 </html>
