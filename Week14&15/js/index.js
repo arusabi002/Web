@@ -87,6 +87,22 @@ async function setupActionButtons() {
 
         const headerAuth = document.querySelector(".header__auth");
 
+        document.querySelectorAll(".news-card__actions a.button--blue").forEach(link => {
+            link.addEventListener("click", event => {
+                if (!authToken) {
+                    event.preventDefault();
+                    alert("Авторизуйтесь для редактирования.");
+                }
+            });
+        });
+
+        document.querySelectorAll(".news-card__actions button.button--red").forEach(button => {
+            button.addEventListener("click", () => {
+                if (!authToken) return alert("Авторизация для удаления.");
+                deleteNews(button.getAttribute("onclick").match(/\d+/)[0]);
+            });
+        });
+
         const response = await fetch(`https://webfinalapi.mobydev.kz/user/profile`, {
             headers: {
                 "Authorization": `Bearer ${authToken}`,
@@ -107,21 +123,6 @@ async function setupActionButtons() {
         <button class="button button--red" onclick="logout()">Выйти</button>`;
         }
 
-        document.querySelectorAll(".news-card__actions a.button--blue").forEach(link => {
-            link.addEventListener("click", event => {
-                if (!authToken) {
-                    event.preventDefault();
-                    alert("Авторизуйтесь для редактирования.");
-                }
-            });
-        });
-
-        document.querySelectorAll(".news-card__actions button.button--red").forEach(button => {
-            button.addEventListener("click", () => {
-                if (!authToken) return alert("Авторизация для удаления.");
-                deleteNews(button.getAttribute("onclick").match(/\d+/)[0]);
-            });
-        });
     } catch (error) {
         console.error('Ошибка при получении новости: ', error);
     }

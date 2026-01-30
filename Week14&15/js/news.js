@@ -3,9 +3,37 @@ function getNewsIdFromUrl() {
     return params.get('id');
 }
 
-const newsId = getNewsIdFromUrl();
-
 const BASE_URL = "https://webfinalapi.mobydev.kz"
+
+async function deleteNews(id) {
+    const authToken = localStorage.getItem("authToken");
+
+    if (!authToken) {
+        alert("Авторизуйтесь для удаления!");
+        return;
+    }
+
+    const isConfirmed = confirm("Вы уверены, что хотите удалить данную новость?");
+    if (!isConfirmed) return;
+
+    try {
+        const responce = await fetch(`${BASE_URL}/news/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Authorization': `Bearer ${authToken}`
+            }
+        });
+
+        if (responce.ok) {
+            alert('Новость успешно удалена.');
+            window.location.href = "./index.html";
+        } else {
+            alert('Ошибка при удалении новости.')
+        }
+    } catch (error) {
+        console.error('Ошибка', error);
+    }
+}
 
 async function fetchAndRenderNewsById(newsId) {
     try {
@@ -16,10 +44,20 @@ async function fetchAndRenderNewsById(newsId) {
 
         document.querySelector('.news-title').textContent = news.title;
         document.querySelector('.news-author').textContent = news.author.name || 'Неизвестный автор';
-        document.querySelector('.news-date').textContent = new Date (news.createdAt).toLocaleDateString() + "г.";
+        document.querySelector('.news-date').textContent = new Date(news.createdAt).toLocaleDateString() + "г.";
         document.querySelector('.news-category').textContent = news.category.name;
         document.querySelector('.news-image').src = `${BASE_URL}${news.thumbnail}`;
         document.querySelector('.news-content').textContent = news.content;
+
+        const actionButtons = document.querySelector('.news-actionButtons')
+        actionButtons.innerHTML = `
+            <a href="./edit.html?id=${news.id}" class="news-edit">
+                <img src="./img/pencil-01.svg" alt="pencil icon">
+            </a>
+            <button onclick="deleteNews(${news.id})" class="news-delete">
+                <img src="./img/trash-04.svg" alt="delete icon">
+            </button>`
+        setupActionButtons();
     } catch (error) {
         console.error('Ошибка при получении новости: ', error);
     }
@@ -30,6 +68,21 @@ async function fetchAndRenderNewsById(newsId) {
 
 async function setupActionButtons() {
     try {
+        document.querySelectorAll(".news-actionButtons a.news-edit").forEach(link => {
+            link.addEventListener("click", event => {
+                if (!authToken) {
+                    event.preventDefault();
+                    alert("Авторизуйтесь для редактирования.");
+                }
+            });
+        });
+
+        document.querySelectorAll(".news-actionButtons a.news-delete").forEach(button => {
+            button.addEventListener("click", () => {
+                if (!authToken) return alert("Авторизация для удаления.");
+                deleteNews(button.getAttribute("onclick").match(/\d+/)[0]);
+            });
+        });
         const authToken = localStorage.getItem("authToken");
 
         const headerAuth = document.querySelector(".header__auth");
@@ -54,21 +107,7 @@ async function setupActionButtons() {
         <button class="button button--red" onclick="logout()">Выйти</button>`;
         }
 
-        document.querySelectorAll(".news-card__actions a.button--blue").forEach(link => {
-            link.addEventListener("click", event => {
-                if (!authToken) {
-                    event.preventDefault();
-                    alert("Авторизуйтесь для редактирования.");
-                }
-            });
-        });
 
-        document.querySelectorAll(".news-card__actions button.button--red").forEach(button => {
-            button.addEventListener("click", () => {
-                if (!authToken) return alert("Авторизация для удаления.");
-                deleteNews(button.getAttribute("onclick").match(/\d+/)[0]);
-            });
-        });
     } catch (error) {
         console.error('Ошибка при получении новости: ', error);
     }
@@ -83,8 +122,8 @@ function logout() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    setupActionButtons();
-    const nesId = getNewsIdFromUrl();
+
+    const newsId = getNewsIdFromUrl();
     if (newsId) {
         fetchAndRenderNewsById(newsId);
     } else {

@@ -33,7 +33,6 @@ hr {
 
 .news-image {
     width: 1000px;
-    height: 650px;
     border-radius: 24px;
 }
 
@@ -44,7 +43,7 @@ hr {
     color: #3D3D3D;
 }
 
-.box1 {
+.news-actionButtons {
     position: fixed;
     bottom: 56px;
     right: 56px;
@@ -53,11 +52,16 @@ hr {
     gap: 10px;
 }
 
-.box1 button {
+.news-actionButtons a,
+.news-actionButtons button {
     width: 80px;
     height: 80px;
     border: none;
     border-radius: 40px;
+}
+
+.news-actionButtons a img{
+    margin: 24px;
 }
 
 .news-edit {
