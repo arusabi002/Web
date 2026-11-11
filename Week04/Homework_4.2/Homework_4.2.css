@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    padding: 40px 50px 10px 50px;
+    margin: 40px 50px 10px 50px;
 }
 
 nav {
@@ -45,7 +45,8 @@ nav .menu a:hover {
 
 .hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
     padding: 50px;
 }
 

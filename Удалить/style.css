@@ -1,0 +1,1013 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.BigBox1 {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    height: 1204px;
+    background-image: url("assets/5dc809ddbfb3c6e3fae3f83fa01788f54216b1df.jpg");
+    gap: 48px;
+    padding: 40px;
+}
+
+.background {
+    display: flex;
+    width: 1280px;
+    height: 1268px;
+}
+
+.container {
+    background-color: #131313;
+    width: 1280px;
+    height: 64px;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.textheader2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Images4-6 {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.buttons2 {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    width: 576px;
+    height: 58px;
+    background-color: #353534;
+    border: 1px solid #5D3F3B;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.search-input2 {
+    background-color: #353534;
+    outline: none;
+    border: none;
+    width: 428px;
+    height: 21px;
+    color: white;
+}
+
+.Search-Icon2 {
+    display: flex;
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.Home {
+    color: #E5E2E1;
+}
+
+.Discover {
+    color: #E7BDB7;
+}
+
+.Avatar-Shop {
+    color: #E7BDB7;
+}
+
+.nav-header2 {
+    display: flex;
+    gap: 10px;
+}
+
+.card1 {
+    display: flex;
+    width: 1200px;
+    height: 248px;
+    background-color: #2A2A2A;
+    border-radius: 12px;
+    border: 1px solid #5D3F3B;
+}
+
+.Big-Text {
+    width: 942px;
+    height: 56px;
+    color: #E5E2E1;
+    font-size: 48px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 25px;
+}
+
+.Medium-text {
+    color: #E7BDB7;
+    width: 544.38px;
+    height: 52px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+}
+
+.CardWithoutBigImage {
+    display: flex;
+    flex-direction: column;
+    width: 942px;
+    height: 178px;
+    margin-left: 55px;
+}
+
+.BoxBigAvatar {
+    display: flex;
+    width: 185.36px;
+    height: 185.36px;
+}
+
+.BigAvatar {
+    display: flex;
+    width: 190.01px;
+    height: 190px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.boxwithicon4 {
+    display: flex;
+    width: 176.52px;
+    height: 38px;
+    background-color: #201F1F;
+    border-radius: 8px;
+    border: 1px solid #5D3F3B;
+    align-items: center;
+    padding: 8px;
+    gap: 5px;
+}
+
+.boxwithicon5 {
+    display: flex;
+    width: 176.52px;
+    height: 38px;
+    background-color: #201F1F;
+    border-radius: 8px;
+    border: 1px solid #5D3F3B;
+    align-items: center;
+    padding: 8px;
+    gap: 5px;
+}
+
+.textinbox {
+    font-size: 14px;
+    font-weight: 600;
+    color: #E5E2E1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon4and5 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+    justify-content: space-between;
+    width: 369px;
+}
+
+.icon5 {
+    width: 20px;
+    height: 20px;
+}
+
+.icon4 {
+    width: 24px;
+    height: 12px;
+}
+
+.textinbox2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #E5E2E1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding-left: 50px;
+}
+
+.smallgamecards {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 1216px;
+    height: 220px;
+    padding-left: 8px;
+    padding-bottom: 16px;
+    padding-right: 8px;
+}
+
+.Imageofgame1 {
+    display: flex;
+    margin: 10px;
+    width: 236px;
+    height: 144px;
+}
+
+.namegame1 {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 236px;
+    height: 28px;
+    color: #E5E2E1;
+}
+
+.percentoflike1 {
+    display: flex;
+    width: 236px;
+    height: 16px;
+    gap: 7px;
+}
+
+.LikeImage1 {
+    width: 12.25px;
+    height: 11.67px;
+}
+
+.percent1 {
+    font-weight: 500;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 22.36px;
+    height: 16px;
+    color: #E7BDB7;
+}
+
+.card5 {
+    display: flex;
+    width: 256px;
+    height: 204px;
+    gap: 4px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card6 {
+    display: flex;
+    width: 256px;
+    height: 204px;
+    gap: 4px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Imageofgame3 {
+    display: flex;
+    margin: 10px;
+    width: 236px;
+    height: 144px;
+}
+
+.namegame3 {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 236px;
+    height: 28px;
+    color: #E5E2E1;
+}
+
+.percentoflike3 {
+    display: flex;
+    width: 236px;
+    height: 16px;
+    gap: 7px;
+}
+
+.LikeImage3 {
+    width: 12.25px;
+    height: 11.67px;
+}
+
+.percent3 {
+    font-weight: 500;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 22.36px;
+    height: 16px;
+    color: #E7BDB7;
+}
+
+.text-with-smallgamecards {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 284px;
+    gap: 24px;
+}
+
+.Continue {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E5E2E1;
+}
+
+.See {
+    font-size: 16px;
+    font-weight: 400;
+    color: #0066FF;
+}
+
+.text-without-games {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    height: 40px;
+}
+
+.biggamecards {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 1200px;
+    height: 364px;
+    padding-left: 8px;
+    padding-bottom: 16px;
+    padding-right: 8px;
+}
+
+.text-with-biggamecards {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 428px;
+    gap: 24px;
+}
+
+.text-without-biggames {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    height: 40px;
+}
+
+.card3 {
+    display: flex;
+    width: 288px;
+    height: 363px;
+    background-color: #201F1F;
+    gap: 4px;
+    border-radius: 12px;
+    border: 1px solid #5D3F3B;
+    align-items: center;
+    flex-direction: column;
+}
+
+.percent2 {
+    font-weight: 400;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 18.67px;
+    height: 15px;
+    color: #E7BDB7;
+}
+
+.namegame2 {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 254px;
+    height: 20px;
+    color: #E5E2E1;
+    padding-top: 12px;
+}
+
+.percentoflike2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    width: 254px;
+    height: 15px;
+    padding-top: 12px;
+}
+
+.LikeImage2 {
+    width: 10.5px;
+    height: 10px;
+}
+
+.Imageofgame2 {
+    display: flex;
+    border-radius: 12px;
+    width: 286px;
+    height: 286px;
+}
+
+.Likeandpercent {
+    display: flex;
+    gap: 5px;
+}
+
+.Activepeople {
+    font-weight: 700;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 52.06px;
+    height: 15px;
+    color: #E7BDB7;
+}
+
+.card7 {
+    display: flex;
+    width: 288px;
+    height: 363px;
+    background-color: #201F1F;
+    gap: 4px;
+    border-radius: 12px;
+    border: 1px solid #5D3F3B;
+    align-items: center;
+    flex-direction: column;
+}
+
+.percent3 {
+    font-weight: 400;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 18.67px;
+    height: 15px;
+    color: #E7BDB7;
+}
+
+.namegame3 {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 254px;
+    height: 20px;
+    color: #E5E2E1;
+    padding-top: 12px;
+}
+
+.percentoflike3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    width: 254px;
+    height: 15px;
+    padding-top: 12px;
+}
+
+.LikeImage3 {
+    width: 10.5px;
+    height: 10px;
+}
+
+.Imageofgame4 {
+    display: flex;
+    border-radius: 12px;
+    width: 286px;
+    height: 286px;
+}
+
+.Likeandpercent2 {
+    display: flex;
+    gap: 5px;
+}
+
+.Activepeople2 {
+    font-weight: 700;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 52.06px;
+    height: 15px;
+    color: #E7BDB7;
+}
+
+.card8 {
+    display: flex;
+    width: 288px;
+    height: 363px;
+    background-color: #201F1F;
+    gap: 4px;
+    border-radius: 12px;
+    border: 1px solid #5D3F3B;
+    align-items: center;
+    flex-direction: column;
+}
+
+.percent4 {
+    font-weight: 400;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 18.67px;
+    height: 15px;
+    color: #E7BDB7;
+}
+
+.namegame4 {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 254px;
+    height: 20px;
+    color: #E5E2E1;
+    padding-top: 12px;
+}
+
+.percentoflike4 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    width: 254px;
+    height: 15px;
+    padding-top: 12px;
+}
+
+.LikeImage4 {
+    width: 10.5px;
+    height: 10px;
+}
+
+.Imageofgame5 {
+    display: flex;
+    border-radius: 12px;
+    width: 286px;
+    height: 286px;
+}
+
+.Likeandpercent3 {
+    display: flex;
+    gap: 5px;
+}
+
+.Activepeople3 {
+    font-weight: 700;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 58px;
+    height: 15px;
+    color: #E7BDB7;
+}
+
+.card9 {
+    display: flex;
+    width: 288px;
+    height: 363px;
+    background-color: #201F1F;
+    gap: 4px;
+    border-radius: 12px;
+    border: 1px solid #5D3F3B;
+    align-items: center;
+    flex-direction: column;
+}
+
+.percent5 {
+    font-weight: 400;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 18.67px;
+    height: 15px;
+    color: #E7BDB7;
+}
+
+.namegame5 {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 254px;
+    height: 20px;
+    color: #E5E2E1;
+    padding-top: 12px;
+}
+
+.percentoflike5 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    width: 254px;
+    height: 15px;
+    padding-top: 12px;
+}
+
+.LikeImage5 {
+    width: 10.5px;
+    height: 10px;
+}
+
+.Imageofgame6 {
+    display: flex;
+    border-radius: 12px;
+    width: 286px;
+    height: 286px;
+}
+
+.Likeandpercent4 {
+    display: flex;
+    gap: 5px;
+}
+
+.Activepeople4 {
+    font-weight: 700;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 52.06px;
+    height: 15px;
+    color: #E7BDB7;
+}
+
+.BigBox2 {
+    display: none;
+}
+
+.container1 {
+    display: none;
+}
+
+
+
+.Search-Icon000 {
+    width: 18px;
+    height: 18px;
+}
+
+.ButtonIcon {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.Greeting {
+    display: none;
+}
+
+.Continue-Playing {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    width: 175.34px;
+    height: 28px;
+    color: #E5E2E1;
+    padding-left: 10px;
+}
+
+.Arrow {
+    width: 7.4px;
+    height: 12px;
+}
+
+.text-for-gemes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 378px;
+    height: 28px;
+}
+
+.Games1 {
+    display: flex;
+    width: 390px;
+    height: 196px;
+    gap: 16px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.FirstGame {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    height: 188px;
+    gap: 8px;
+}
+
+.FirstGameImage {
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+}
+
+.GameName1 {
+    width: 152px;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #E5E2E1;
+}
+
+.SecondGame {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    height: 188px;
+    gap: 8px;
+}
+
+.SecondGameImage {
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+}
+
+.GameName2 {
+    width: 152px;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #E5E2E1;
+}
+
+.ThirdGame {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    height: 188px;
+    gap: 8px;
+}
+
+.ThirdGameImage {
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+}
+
+.GameName3 {
+    width: 152px;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #E5E2E1;
+}
+
+.Games2 {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+}
+
+.GameRow2 {
+    display: flex;
+    flex-direction: column;
+    height: 487.5px;
+    width: 358px;
+    gap: 16px;
+}
+
+.FourGameImage {
+    width: 171px;
+    height: 213.75px;
+    border-radius: 12px;
+}
+
+.FiveGameImage {
+    width: 171px;
+    height: 213.75px;
+    border-radius: 12px;
+}
+
+.SixGameImage {
+    width: 171px;
+    height: 213.75px;
+    border-radius: 12px;
+}
+
+.SevenGameImage {
+    width: 171px;
+    height: 213.75px;
+    border-radius: 12px;
+}
+
+.Game2Row1 {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.Game2Row2 {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding-top: 24.9px;
+}
+
+.text-for-gemes2 {
+    align-items: center;
+    width: 378px;
+    height: 28px;
+}
+
+.Recommended {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    width: 378px;
+    height: 28px;
+    color: #E5E2E1;
+    padding-left: 10px;
+}
+
+.GameName4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    width: 67px;
+    height: 18px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+
+.GameName5 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    width: 91px;
+    height: 18px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+
+.GameName6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    width: 88px;
+    height: 18px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+
+.GameName7 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    width: 90px;
+    height: 18px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+
+.ActiveIcon {
+    width: 12.83px;
+    height: 9.33px;
+}
+
+.ActiveOfGame {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 10px;
+    width: 25.55px;
+    height: 15px;
+}
+
+.ActiveOfGame1 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 10px;
+    width: 19.95px;
+    height: 15px;
+}
+
+.ActiveOfGame2 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 10px;
+    width: 23.14px;
+    height: 15px;
+}
+
+.Act {
+    display: flex;
+    flex-direction: row;
+    width: 147px;
+    height: 15px;
+    gap: 4px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.ROBLOX {
+    color: #E2231A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+@media (max-width : 1024px) {
+    .container1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #131313;
+        width: 390px;
+        height: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .PlayerRoblox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 126px;
+        height: 32px;
+        gap: 12px;
+    }
+
+    .Playerphoto {
+        width: 32px;
+        height: 32px;
+        border-radius: 9999px;
+        border: 2px solid #E2231A;
+    }
+
+    .ROBLOX {
+        color: #E2231A;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+    }
+
+    .SearchAndIcon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 96px;
+        height: 40px;
+        gap: 16px;
+    }
+
+    .Greeting {
+        width: 358px;
+        height: 104px;
+        display: block;
+    }
+
+    .card1 {
+        display: none;
+    }
+
+    .card2 {
+        display: flex;
+        width: 256px;
+        height: 204px;
+        gap: 4px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card4 {
+        display: flex;
+        width: 256px;
+        height: 204px;
+        gap: 4px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card5 {
+        display: none;
+    }
+
+    .card6 {
+        display: none;
+    }
+
+    .BigBox2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 390px;
+        height: 993px;
+        background-color: #111111;
+        margin-bottom: 100px;
+        padding: 8px;
+        gap: 32px;
+    }
+
+    .BigBox1 {
+        display: none;
+    }
+}

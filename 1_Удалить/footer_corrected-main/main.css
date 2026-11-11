@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  opacity: 1;
+  font-family: Raleway;
+  font-weight: 500;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.footer__text {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #86928b;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer {
+  width: 100%;
+  min-width: 320px;
+  height: 395px;
+  background: #e1ede6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__container {
+  width: 290px;
+  height: 355px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 20px;
+  column-gap: 40px;
+  grid-template-areas:
+    "box1 box1"
+    "box2 box3"
+    "box4 box5"
+    "box6 box6";
+}
+.footer__logo {
+  width: 143px;
+  height: 35px;
+  grid-area: box1;
+}
+
+.footer__phone-address {
+  width: 136px;
+  height: 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  grid-area: box2;
+}
+
+.footer__phone {
+  display: block;
+  color: #2c2d35;
+}
+
+.footer__reproduction-country {
+  width: 104px;
+  height: 109px;
+  grid-area: box3;
+}
+
+.footer__news-year {
+  width: 136px;
+  height: 83px;
+  grid-area: box4;
+}
+.footer__news {
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.footer__about-people {
+  width: 96px;
+  height: 83px;
+  grid-area: box5;
+}
+.footer__about {
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.footer__socials-reserved {
+  width: 176px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 10px;
+  grid-area: box6;
+  margin-top: 20px;
+}
+.footer__socials {
+  width: 132px;
+  height: 24px;
+  gap: 30px;
+  display: flex;
+  align-self: center;
+}
+
+.footer__reserved {
+  width: 176px;
+  height: 14px;
+  font-size: 12px;
+  line-height: 120%;
+}
+
+/*Планшет планшет планшет*/
+@media screen and (min-width: 510px) {
+  .footer {
+    min-width: 576px;
+    height: 319px;
+  }
+
+  .footer__container {
+    width: 510px;
+    height: 273px;
+    grid-template-columns: 230px 1fr 1fr;
+    grid-template-rows: 50px 30px 113px 32px 48px;
+    row-gap: 0px;
+    column-gap: 0px;
+    grid-template-areas:
+      "box1 . box2"
+      ". . ."
+      "box3 box4  box5"
+      ". . ."
+      "box6 box6 box6 ";
+  }
+  .footer__phone-address {
+    width: 170px;
+    height: 50px;
+  }
+
+  .footer__reproduction-country {
+    width: 130px;
+    height: 113px;
+  }
+  .footer__reproduction {
+    font-size: 20px;
+  }
+
+  .footer__news-year {
+    width: 84px;
+  }
+
+  .footer__about-people {
+    justify-self: end;
+  }
+
+  .footer__socials-reserved {
+    margin-top: 0px;
+  }
+
+  .footer__reserved {
+    width: 176px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 120%;
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  .footer__text {
+    font-size: 18px;
+  }
+
+  .footer {
+    min-width: 1120px;
+    height: 168px;
+  }
+
+  .footer__container {
+    width: 1110px;
+    height: 122px;
+    grid-template-columns: 170px 120px 128px 60px 84px 60px 108px 248px 132px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "box1 . box3 . box4 .  box5 . box6"
+      "box2 . box3 . box4 .  box5 . .";
+  }
+
+  .footer__reproduction {
+    font-size: 20px;
+  }
+
+  .footer__news-year {
+    width: 84px;
+  }
+
+  .footer__socials-reserved {
+    width: 132px;
+    height: 68px;
+  }
+
+  .footer__reserved {
+    width: 132px;
+    height: 34px;
+    font-size: 12px;
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  span {
+    display: inline-block;
+  }
+}
